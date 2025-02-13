@@ -1,15 +1,11 @@
 #include <stdio.h>
 
-/*
- * insert puts message
- *
- *return 0
- *
- */
-
-
-
-
+/**
+*insert puts message
+*
+*return
+*
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");

@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 /**
-*insert puts message
-*
-*return
-*
+*main - Function
+*Return: 0
 */
 int main(void)
 {

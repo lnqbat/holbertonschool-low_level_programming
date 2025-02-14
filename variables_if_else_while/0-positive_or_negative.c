@@ -2,12 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/* Print random number
-*
-* main - print random positiv or negativ number
-*
-* return: 0
-*/
+/* Print random number*/
+/* main - print random positiv or negativ number*/
+/* return: 0*/
 
 int main(void)
 {

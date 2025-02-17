@@ -1,4 +1,9 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-#include <unistd.h>
+#ifndef main_h
+#define main_h
+
+int _putchar(char c);
+
+
+
+
+#endif

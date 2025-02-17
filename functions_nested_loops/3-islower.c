@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _islower - check the code for lower character.
  *
- * Return: Always 0.
+ * @c: Is the chracter checked
+ *
+ * Return: 0 or 1 .
  */
 
 int _islower(int c)

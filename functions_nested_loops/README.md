@@ -11,3 +11,9 @@ README
 4. isalpha == Write a function that checks for alphabetic character.
 
 5. Sign == Write a function that prints the sign of a number.
+
+7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important == Write a function that prints the last digit of a number.
+
+8. I'm federal agent Jack Bauer, and today is the longest day of my life == Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+
+

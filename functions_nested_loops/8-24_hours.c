@@ -22,7 +22,7 @@ void jack_bauer(void)
 			_putchar((mint / 10) + '0');
 			_putchar((mint % 10) + '0');
 			_putchar('\n');
-		}	
+		}
 	}
 
 }

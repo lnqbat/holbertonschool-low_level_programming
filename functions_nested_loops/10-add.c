@@ -1,13 +1,16 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * add - int value
  *
- * Return: Always 0.
+ * @a: value ...
+ * @b: value ..
+ *
+ * Return: a+b
  */
 
 int add(int a, int b)
 
 {
-	return ( a + b);
+	return (a + b);
 }

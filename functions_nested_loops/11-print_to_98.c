@@ -4,6 +4,8 @@
 /**
  * print_to_98 - print all natural numbers
  *
+ *@n: numbers variable.
+ *
  * Return: Always 0.
  */
 

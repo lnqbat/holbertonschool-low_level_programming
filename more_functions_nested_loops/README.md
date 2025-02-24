@@ -19,4 +19,6 @@ README
 
 7-print_diagonal.c == Write a function that draws a diagonal line on the terminal.
 
+8-print_square.c == Write a function that prints a square, followed by a new line.
+
 

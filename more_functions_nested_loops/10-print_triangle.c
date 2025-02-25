@@ -3,6 +3,8 @@
 /**
  * print_triangle - prints a triangle.
  *
+ * @size: my triangle
+ *
  * Return: Always 0.
  */
 
@@ -20,7 +22,7 @@ void print_triangle(int size)
 	for (line = 1; line <= size; line++)
 	{
 		for (space = (size - line - 1); space >= 0; space--)
-		{	
+		{
 			_putchar(' ');
 		}
 		for (square = 1; square <= line; square++)

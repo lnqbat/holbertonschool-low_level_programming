@@ -21,4 +21,5 @@ README
 
 8-print_square.c == Write a function that prints a square, followed by a new line.
 
+10-print_triangle.c == Write a function that prints a triangle, followed by a new line.
 

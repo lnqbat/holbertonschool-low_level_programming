@@ -21,7 +21,7 @@ void puts_half(char *str)
 			mid = string / 2;
 
 		else
-			mid = string + 1 / 2;
+			mid = (string + 1) / 2;
 
 		for (n = mid; n < string; n++)
 		{

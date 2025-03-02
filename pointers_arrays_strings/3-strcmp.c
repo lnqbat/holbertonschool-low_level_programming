@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
+ * _strcmp - That compare twho stringis diff.
  *
+ * @s1: first string
+ * @s2: Second string
  *
- *
+ * Return: Difference on string 1 et 2 !
  *
  */
 

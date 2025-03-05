@@ -11,7 +11,7 @@ int _atoi(char *s)
 {
 	int len;
 	int num = 0;
-	int sign = 1;
+	int sign = 0;
 
 	for(len = 0; s[len] != '\0'; len++)
 	{
@@ -21,5 +21,5 @@ int _atoi(char *s)
 		}
 
 	}
-	return (num * sign);
+	return (num);
 }

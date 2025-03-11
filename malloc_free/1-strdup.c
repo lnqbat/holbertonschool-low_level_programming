@@ -13,31 +13,30 @@ char *_strdup(char *str)
 
 {
 	char *copy;
-	unsigned int length = 0;
-	unsigned int i;
+	unsigned int i = 0;
+	unsigned int j;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	while (str[length] != '\0')
+	while (str[i] != '\0')
 	{
-		length++;
+		i++;
 	}
 
-	copy = (char *)malloc(strlen(str) + 1);
+	copy = (char *)malloc(i + 1);
 
 	if (copy == NULL)
 	{
 		return (NULL);
 	}
 
-	for (i = 0; i < length; i++)
+	for (j = 0; j < i; j++)
 	{
-		copy[i] = str[i];
+		copy[j] = str[j];
 	}
 
-	copy[length] = '\0';
 
 	return (copy);
 }

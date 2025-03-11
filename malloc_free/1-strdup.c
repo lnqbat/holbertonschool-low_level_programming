@@ -1,5 +1,4 @@
 #include "main.h"
-#include "2-strncpy.c"
 
 /**
  * _strdup - returns a pointer

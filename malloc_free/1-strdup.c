@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strncpy.c"
 
 /**
  * _strdup - returns a pointer
@@ -12,10 +13,16 @@ char *_strdup(char *str)
 
 {
 	char *copy;
+	unsigned int length = 0;
+	unsigned int i;
 
 	if (str == NULL)
 	{
 		return (NULL);
+	}
+	while (str[length] != '\0')
+	{
+		length++;
 	}
 
 	copy = (char *)malloc(strlen(str) + 1);
@@ -25,7 +32,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	strcpy(copy, str);
+	for (i = 0; i < length; i++)
+	{
+		copy[i] = str[i];
+	}
+
+	copy[length] = '\0';
 
 	return (copy);
 }

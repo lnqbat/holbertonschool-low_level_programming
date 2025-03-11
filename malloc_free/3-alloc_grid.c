@@ -32,10 +32,12 @@ int **alloc_grid(int width, int height)
 		for (c = 0; c < r; c++)
 		{
 		free(grid[c]);
-		free(grid);
 		}
+		free(grid);
 		return (NULL);
 		}
+		for (c = 0; c < width; c++)
+			grid[r][c] = 0;
 	}
 	return (grid);
 }

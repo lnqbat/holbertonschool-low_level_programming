@@ -30,14 +30,14 @@ void print_float(va_list args)
  */
 void print_string(va_list args)
 {
-	char *str; 
-	
+	char *str;
+
 	str = va_arg(args, char *);
 
-	if (!str)
-		str = "(nil)";
-
-	printf("%s", str);
+	if (str == NULL)
+		printf("(nil)");
+	else
+		printf("%s", str);
 }
 /**
  * print_all - Prints anything based on the format string
@@ -49,7 +49,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int i = 0, j;
 	char *sep = "";
-	
+
 	type_t check[] = {
 		{'c', print_char},
 		{'i', print_int},

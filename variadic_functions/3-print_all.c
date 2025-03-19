@@ -4,35 +4,35 @@
  * print_char - print char
  * @args: arguments list
  */
-void print_char(va_list args)
+void print_char(va_list *args)
 {
-	printf("%c", va_arg(args, int));
+	printf("%c", va_arg(*args, int));
 }
 /**
  * print_int - print integer
  * @args: arguments list
  */
-void print_int(va_list args)
+void print_int(va_list *args)
 {
-	printf("%d", va_arg(args, int));
+	printf("%d", va_arg(*args, int));
 }
 /**
  * print_float - print a float
  * @args: arguments list
  */
-void print_float(va_list args)
+void print_float(va_list *args)
 {
-	printf("%f", va_arg(args, double));
+	printf("%f", va_arg(*args, double));
 }
 /**
  * print_string - print string
  * @args: arguments list
  */
-void print_string(va_list args)
+void print_string(va_list *args)
 {
 	char *str;
 
-	str = va_arg(args, char *);
+	str = va_arg(*args, char *);
 
 	if (str == NULL)
 		str = "(nil)";
@@ -46,6 +46,7 @@ void print_string(va_list args)
  */
 void print_all(const char * const format, ...)
 {
+
 	va_list args;
 	int i = 0, j;
 	char *sep = "";
@@ -60,15 +61,15 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (format && format[i])
+	while (format[i])
 	{
 		j = 0;
-		while (check[j].type != '\0')
+		while (check[j].type)
 		{
 			if (format[i] == check[j].type)
 			{
 				printf("%s", sep);
-				check[j].f(args);
+				check[j].f(&args);
 				sep = ", ";
 				break;
 			}

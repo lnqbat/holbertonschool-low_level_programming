@@ -21,7 +21,7 @@ unsigned int _strlen(const char *s)
  * add_node - adds a new node at the beginning of a list_t list.
  *
  * @str: the new string
- * @head: the gead of a linked list
+ * @head: the head of a linked list
  *
  * Return: new node head list
  */

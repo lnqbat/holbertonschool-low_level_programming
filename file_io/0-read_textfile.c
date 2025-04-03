@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	ssize_t bytes_read;
 	ssize_t bytes_written;
-	char buffer[2050];
+	char buffer[2048];
 
 	if (!filename)
 	{
@@ -39,6 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (bytes_written != bytes_read)
 	{
+		close(fd);
 		return (0);
 	}
 	/* Return the number of bytes actually written */

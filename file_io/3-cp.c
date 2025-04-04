@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * cp - Copy content from file_from to file_to
+ * main - Copy content from file_from to file_to
  * @argc: number of arguments
  * @argv: argument list
  * Return: 0 on success, exits on error
  */
 
-int cp(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
 	ssize_t read_bytes, written_bytes;
